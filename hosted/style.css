@@ -627,6 +627,22 @@ h3.emptyStats {
 	z-index: -1;
 }
 
+#ribbonProff {
+	position: fixed;
+	opacity: 0.75;
+	top: 13%;
+	left: calc(50% - 42px) !important;
+	z-index: -1;
+}
+
+#ribbonMods {
+	position: fixed;
+	opacity: 0.75;
+	top: 33%;
+	left: calc(47% - 42px) !important;
+	z-index: -1;
+}
+
 #gameButton {
 	font-size: 1.8em !important;
 	top: -15px;
