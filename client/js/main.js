@@ -5947,7 +5947,7 @@ app.main = {
 					this.sound.playEffect(31);
 					this.environment.superFlash = true;
 				} else if(this.sceneTimer < 320 && this.sceneTimer > 318){
-					this.roundScore2 += 200;
+					this.roundScore2 += 50;
 					this.environment.buildingActive = false;
 					this.sound.playBGAudioScene(6);
 					this.environment.cityAttacked = true;
@@ -6529,7 +6529,7 @@ app.main = {
 						this.android17.end = true;
 					}
 					this.sound.playVoice1(88);
-					this.roundScore2 -= 250;
+					this.roundScore2 -= 300;
 				} else if(this.sceneTimer < 222 && this.sceneTimer > 210){
 					if(this.vegeta.left == true){
 						this.android17.position.x -= 70;

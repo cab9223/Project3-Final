@@ -903,7 +903,7 @@ app.Environment = (function(){
 				ctx.drawImage(this.blast17,0,0);
 				if(this.city17Counter > this.blastHold + 9){
 					this.miniExplosion = true;
-					app.main.roundScore2 += (20 + Math.round(getRandom(1,10)));
+					app.main.roundScore2 += (4 + Math.round(getRandom(0,10)));
 					this.blastHold = Math.round(getRandom(25,45));
 					this.city17Counter = 0;
 				} else {

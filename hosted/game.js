@@ -1096,7 +1096,7 @@ app.Android17 = function () {
 								ctx.drawImage(this.blastCharge1, 28, 31, 15, 21);
 							}
 						} else if (this.hurtBTimer < 21) {
-							app.main.roundScore2 += 150 + Math.round(getRandom(0, 100));
+							app.main.roundScore2 += 70 + Math.round(getRandom(0, 30));
 							app.main.environment.flash = true;
 							app.main.environment.shake = true;
 							app.main.environment.powerUp = true;
@@ -7357,7 +7357,7 @@ app.Environment = function () {
 					ctx.drawImage(this.blast17, 0, 0);
 					if (this.city17Counter > this.blastHold + 9) {
 						this.miniExplosion = true;
-						app.main.roundScore2 += 20 + Math.round(getRandom(1, 10));
+						app.main.roundScore2 += 4 + Math.round(getRandom(0, 10));
 						this.blastHold = Math.round(getRandom(25, 45));
 						this.city17Counter = 0;
 					} else {
@@ -16649,7 +16649,7 @@ app.main = (_app$main = {
 					this.sound.playEffect(31);
 					this.environment.superFlash = true;
 				} else if (this.sceneTimer < 320 && this.sceneTimer > 318) {
-					this.roundScore2 += 200;
+					this.roundScore2 += 50;
 					this.environment.buildingActive = false;
 					this.sound.playBGAudioScene(6);
 					this.environment.cityAttacked = true;
@@ -17236,7 +17236,7 @@ app.main = (_app$main = {
 						this.android17.end = true;
 					}
 					this.sound.playVoice1(88);
-					this.roundScore2 -= 250;
+					this.roundScore2 -= 300;
 				} else if (this.sceneTimer < 222 && this.sceneTimer > 210) {
 					if (this.vegeta.left == true) {
 						this.android17.position.x -= 70;

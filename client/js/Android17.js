@@ -1118,7 +1118,7 @@ app.Android17 = (function(){
 							ctx.drawImage(this.blastCharge1,28,31,15,21);
 						}
 					} else if(this.hurtBTimer < 21){
-						app.main.roundScore2 += (150 + Math.round(getRandom(0,100)));
+						app.main.roundScore2 += (70 + Math.round(getRandom(0,30)));
 						app.main.environment.flash = true;
 						app.main.environment.shake = true;
 						app.main.environment.powerUp = true;
