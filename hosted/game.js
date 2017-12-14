@@ -2926,7 +2926,7 @@ app.Android18 = function () {
 		}
 
 		//Namekian Special Recovery
-		if (app.main.NR == true && this.hit == false && this.hardHit == false) {
+		if (app.main.NR == true && this.hit == false && this.hardHit == false && this.health < 101) {
 			this.health += .025;
 		}
 
@@ -17737,8 +17737,7 @@ app.main = (_app$main = {
 					this.toggle2 = false;
 				}
 			}
-			if (myKeys.keydown[myKeys.KEYBOARD.KEY_J] == true) {
-				//CHEAT CODE
+			if (myKeys.keydown[myKeys.KEYBOARD.KEY_J] == true) {//CHEAT CODE
 				//this.environment.shake = true;
 				//this.environment.remote = true;
 				/* this.android17.decision= .5;
@@ -17747,18 +17746,18 @@ app.main = (_app$main = {
     this.aiChoice4 = .96; */
 				//this.vegeta.endurance = 1;
 				//this.vegeta.health = 1;
-				this.powerModule = true;
-				this.temporalModule = true;
-				this.aegisChip = true;
-				this.synchronousChip = true;
-				this.mindCircuit = true;
-				this.masteryCircuit = true;
-				this.dataOfPiccolo = true;
-				this.dataOfVegeta = true;
-				this.dataOfGohan = true;
-				this.dataOfTien = true;
-				this.dataOfKrillin = true;
-				this.version = 20;
+				/* this.powerModule = true;
+    this.temporalModule = true;
+    this.aegisChip = true;
+    this.synchronousChip = true;
+    this.mindCircuit = true;
+    this.masteryCircuit = true;
+    this.dataOfPiccolo = true;
+    this.dataOfVegeta = true;
+    this.dataOfGohan = true;
+    this.dataOfTien = true;
+    this.dataOfKrillin = true;
+    this.version = 20; */
 				//this.android17.counter = 0;
 				//this.dodgeChance2 = .05;
 				//this.android17.fight = true;
@@ -17766,8 +17765,8 @@ app.main = (_app$main = {
 				//this.android17.fieldOn = true;
 				//this.android17.stun = true;
 				//this.android17.hurtBlasting = true;
-				this.android18.endurance = 1;
-				this.android18.health = 1;
+				//this.android18.endurance = 1;
+				//this.android18.health = 1;
 				//this.dataOfVegeta = false;
 				//this.android17.cinematic = true;
 				//this.vegeta.blastTrigger = true;
@@ -17778,6 +17777,7 @@ app.main = (_app$main = {
 				//this.vegeta.fight = true;
 				//this.vegeta.charging = true;
 				//this.support[1].triggerBlast = true;
+
 			}
 			if (myKeys.keydown[myKeys.KEYBOARD.KEY_J] != true) {//CHEAT CODE
 				//this.environment.shake = true;
@@ -22464,9 +22464,10 @@ app.Vegeta = function () {
 					} else if (this.specialHealth == 8) {
 						app.main.sound.playTaunt7(4);
 						this.spSaying = true;
-					} else {
-						app.main.sound.playTaunt7(getRandom(12, 14));
-					}
+					} /*  else if(this.specialHealth < 10) {
+       app.main.sound.playTaunt7(getRandom(12,14));
+       this.spSaying = true;
+       } */
 				}
 			}
 
@@ -22493,9 +22494,10 @@ app.Vegeta = function () {
 					} else if (this.specialHealth == 8) {
 						app.main.sound.playTaunt8(8);
 						this.spSaying = true;
-					} else {
-						app.main.sound.playTaunt8(getRandom(15, 17));
-					}
+					} /*  else if(this.specialHealth < 10) {
+       app.main.sound.playTaunt8(getRandom(15,17));
+       this.spSaying = true;
+       } */
 				}
 			}
 

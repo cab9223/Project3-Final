@@ -1861,9 +1861,10 @@ app.Vegeta = (function(){
 					} else if(this.specialHealth == 8){
 						app.main.sound.playTaunt7(4);
 						this.spSaying = true;
-					} else {
+					}/*  else if(this.specialHealth < 10) {
 						app.main.sound.playTaunt7(getRandom(12,14));
-					}
+						this.spSaying = true;
+					} */
 				}
 			}
 			
@@ -1890,9 +1891,10 @@ app.Vegeta = (function(){
 					} else if(this.specialHealth == 8){
 						app.main.sound.playTaunt8(8);
 						this.spSaying = true;
-					} else {
+					}/*  else if(this.specialHealth < 10) {
 						app.main.sound.playTaunt8(getRandom(15,17));
-					}
+						this.spSaying = true;
+					} */
 				}
 			}
 			

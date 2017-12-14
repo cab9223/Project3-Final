@@ -801,7 +801,7 @@ app.Android18 = (function(){
 			
 			
 		//Namekian Special Recovery
-		if(app.main.NR == true && this.hit == false && this.hardHit == false){
+		if(app.main.NR == true && this.hit == false && this.hardHit == false && this.health < 101){
 			this.health += .025;
 		}
 		
